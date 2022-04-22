@@ -32,7 +32,7 @@ app.use(
 );
 
 app.post("/reserve/:name/:token", reserveController);
-app.post("/checkout/:name/", checkoutController);
+app.post("/checkout/:name", checkoutController);
 
 // // add one contact
 // app.post("/contacts", postController);

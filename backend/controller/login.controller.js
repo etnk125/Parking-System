@@ -10,7 +10,7 @@ module.exports = async (req, res) => {
     }
     // may use req.body instead
     const resp = await User.findOne({ email: email, password: password });
-    res.json(!!resp);
+    res.json(resp);
   } catch (err) {
     console.log(`ID or password incorrect`);
     console.error(err);
