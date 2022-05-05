@@ -42,5 +42,6 @@ app.post("/register", registerController);
 // backend
 // get token
 app.get("/token/:name", getTokenController);
+// get notification
 
 module.exports = app;
