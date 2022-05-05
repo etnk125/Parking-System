@@ -31,7 +31,7 @@ app.use(
   })
 );
 
-app.post("/reserve/:name/:token", reserveController);
+app.post("/reserve/:name", reserveController);
 app.post("/checkout/:name", checkoutController);
 
 // // add one contact
