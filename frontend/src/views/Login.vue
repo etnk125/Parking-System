@@ -25,7 +25,7 @@ import { login } from "../services";
 export default {
   data: () => ({
     form: {
-      email: "earth@mail.com ",
+      email: "earth@mail.com",
       password: "1234",
     },
   }),

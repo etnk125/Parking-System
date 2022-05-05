@@ -26,7 +26,7 @@ import { register } from "../services";
 export default {
   data: () => ({
     form: {
-      email: "earth@mail.com ",
+      email: "earth@mail.com",
       password: "1234",
       token: "asfsv%SD%AID!@3b2",
     },
