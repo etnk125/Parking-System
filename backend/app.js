@@ -9,8 +9,6 @@ const checkoutController = require("./controller/checkout.controller");
 const getTokenController = require("./controller/getToken.controller");
 const loginController = require("./controller/login.controller");
 const registerController = require("./controller/register.controller");
-// const deleteController = require("./controller/delete.controller");
-// const loginController = require("./controller/login.controller");
 
 // incase using bcryptjs
 // const bcrypt = require("bcryptjs");
@@ -31,20 +29,18 @@ app.use(
   })
 );
 
+// frontend
+// reserve
 app.post("/reserve/:name", reserveController);
+// checkout
 app.post("/checkout/:name", checkoutController);
-
-// // add one contact
-// app.post("/contacts", postController);
-// // edit one contact
-// app.post("/contacts/:id", editController);
-
 // login
 app.post("/login", loginController);
 // register
 app.post("/register", registerController);
-// app.get("/login", loginController);
-// get request should not have body
-// get work in postman but not work in browser
+
+// backend
+// get token
+app.get("/token/:name", getTokenController);
 
 module.exports = app;
