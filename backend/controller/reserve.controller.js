@@ -1,5 +1,5 @@
 const Parking = require("../model/parking.model");
-const User = require("../model/user.model");
+const Notification = require("../model/notification.model");
 
 // using promise when searching
 module.exports = async (req, res) => {
@@ -9,6 +9,10 @@ module.exports = async (req, res) => {
       { name: req.params.name },
       { token: req.body?.token || "", date: date ? date : Date.now() }
     );
+    await Notification.create({
+      token: resp.token,
+      message: `your parking number is ${req.params.name}`,
+    });
     res.json(resp);
   } catch (err) {
     console.log(err);
