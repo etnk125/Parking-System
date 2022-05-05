@@ -47,7 +47,7 @@ export default {
       this.reserved = !this.reserved;
     },
     toMinAndSec(diff) {
-      const sec = Math.round(diff / 1000);
+      const sec = Math.round(diff / 1000) % 60;
       const min = Math.round(diff / 1000 / 60);
       return { min, sec };
     },
