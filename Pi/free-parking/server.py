@@ -1,5 +1,6 @@
 # import
-from flask import Flask, request, make_response, jsonify
+import datetime
+from flask import Flask, request, make_response, jsonify, render_template
 import RPi.GPIO as GPIO
 import os
 import json
@@ -26,6 +27,7 @@ def gpio_set_input():
 # create flask app
 app = Flask(__name__)
 log = app.logger
+
 
 # recieve request from webhook
 
