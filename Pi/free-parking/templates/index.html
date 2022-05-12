@@ -9,9 +9,11 @@
 </head>
 
 <body>
-  <h1 style="text-align: center;">Remaining</h1>
+  <h1 style="text-align: center;">Free parking</h1>
   <h2 style="text-align: center;" id="time"></h2>
-  <font><strong id="remain"><br /></strong></font>
+  <div style="text-align: center;">
+  <font  color="red"><strong id="value"><br /></strong></font>
+  </div>
 
 
 
@@ -21,8 +23,7 @@
     $(
       function update() {
         $.getJSON('/update', function (data) {
-          $("#remain").text(data.remain);
-          $("#max").text(data.max);
+          $("#value").text(data.value);
           $("#time").text(data.time);
           setTimeout(function () {
             update();
