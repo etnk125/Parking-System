@@ -7,6 +7,7 @@ const express = require("express");
 const reserveController = require("./controller/reserve.controller");
 const checkoutController = require("./controller/checkout.controller");
 const getTokenController = require("./controller/getToken.controller");
+const getAllTokenController = require("./controller/getAllToken.controller");
 const getNotificationController = require("./controller/getNotification.controller");
 const loginController = require("./controller/login.controller");
 const registerController = require("./controller/register.controller");
@@ -43,6 +44,8 @@ app.post("/register", registerController);
 // backend
 // get token
 app.get("/token/:name", getTokenController);
+// get all token
+app.get("/token", getAllTokenController);
 // get notification
 app.get("/notification", getNotificationController);
 
