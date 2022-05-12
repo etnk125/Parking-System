@@ -68,6 +68,7 @@ class Main:
                 sum += GPIO.input(e)
 
             self.seg.text = str(sum)
+            print([GPIO.input(e) for e in self.ir])
             time.sleep(1)
 
 
