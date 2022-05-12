@@ -1,5 +1,4 @@
 # Natthawee Koengfak 6213125
-# https://docs.google.com/spreadsheets/d/1-Hp5QSB9J4o3Ljcb1Mn9XatZvVPePCXGoufBd5jaR5k/edit?usp=sharing
 import time
 from datetime import datetime
 
@@ -12,12 +11,6 @@ from luma.core.interface.serial import spi, noop
 from luma.core.virtual import viewport, sevensegment
 
 
-# Initialize Netpie information
-NETPIE_HOST = "broker.netpie.io"
-CLIENT_ID = "9c389ca8-6e95-4063-916d-52f284b5684d"  # YOUR CLIENT ID
-DEVICE_TOKEN = "tYEw2842zc1iWR6zHHMhcrtpeTYaaCN2"  # YOUR TOKEN
-
-
 # gpio init
 def gpio_init(outp=[], inp=[]):
     GPIO.setwarnings(False)
@@ -26,15 +19,6 @@ def gpio_init(outp=[], inp=[]):
         GPIO.setup(i, GPIO.OUT)
     for i in inp:
         GPIO.setup(i, GPIO.IN)
-
-
-# connect ggs
-def connect(SheetName, GSheet_OAUTH_JSON, worksheet_name, scope):
-    credentials = ServiceAccountCredentials.from_json_keyfile_name(
-        GSheet_OAUTH_JSON, scope)
-    client = gspread.authorize(credentials)
-    worksheet = client.open(SheetName).worksheet(worksheet_name)
-    return worksheet
 
 
 def toggle(pin, condition=False):
