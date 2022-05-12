@@ -29,6 +29,23 @@ app = Flask(__name__)
 log = app.logger
 
 
+# home page
+@app.route('/', methods=['GET'])
+def index():
+    print("start webpage")
+    return render_template('index.html')
+
+
+@app.route('/update', methods=['GET'])
+def update():
+    now = datetime.datetime.now()
+    timeString = "TIME: " + now.strftime("%H:%M:%S")
+    UpdateTimeOnweb = {
+        'value': get_remain(),
+        'time': timeString
+    }
+    return jsonify(**UpdateTimeOnweb)
+
 # recieve request from webhook
 
 
