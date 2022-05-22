@@ -10,7 +10,7 @@ module.exports = async (req, res) => {
       { token: req.body?.token || "", date: date ? date : Date.now() }
     );
     await Notification.create({
-      token: resp.token,
+      token: req.body?.token,
       message: `your parking number is ${req.params.name}`,
     });
     res.json(resp);
