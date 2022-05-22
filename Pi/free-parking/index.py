@@ -48,8 +48,8 @@ def main():
 
 class Main:
     # led
-    ir = [32, 36, 38, 40]
-    led = [31, 33, 35, 37]
+    ir = [32, 36, 38]
+    led = [31,  35, 37]
 
     def __init__(self):
         # using gpio

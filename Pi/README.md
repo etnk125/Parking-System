@@ -10,11 +10,9 @@
   - 32
   - 36
   - 38
-  - 40
 
 ### led pin to display parking status
   - 31
-  - 33
   - 35
   - 37
 
@@ -29,8 +27,8 @@ should using ground at 20,25
 
 ## vip parking 
 
-ir: 32, 36, 38, 40
-led: 31, 33, 35, 37
+ir: 32, 36, 38
+led: 31, 35, 37
 
 sent car status and token to netpie 
 {
