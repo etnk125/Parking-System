@@ -31,7 +31,7 @@ class Main:
                 hour = int(sec/60/60)
                 self.line_notify(
                     e['token'], f"you have been parked for {hour} hour {min} min")
-                time.sleep(self.interval)
+            time.sleep(self.interval)
 
     def line_notify(self, token, message):
         # notify to line server
