@@ -4,7 +4,7 @@
     <section>
       <label>available</label>
       <label>your pos</label>
-      <div class="available section">{{!reserved?"4":"3"}}</div>
+      <div class="available section">{{!reserved?"3":"2"}}</div>
       <div class="parking section">{{!reserved?"-":"A1"}}</div>
     </section>
     <button
