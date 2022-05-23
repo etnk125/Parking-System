@@ -29,7 +29,7 @@ class Main:
                         e['date'], "%Y-%m-%dT%H:%M:%S.%f%z").replace(tzinfo=None)
                     sec = (now-start_time).total_seconds()
                     min = int((sec/60) % 60)
-                    hour = int(sec/60/60)
+                    hour = int(sec/60/60)-7
                     self.line_notify(
                         e['token'], f"you have been parked for {hour} hour {min} min")
             time.sleep(self.interval)
