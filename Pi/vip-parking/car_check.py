@@ -47,7 +47,8 @@ class Main:
     def get_token(self):
         # get token from node server
         # change to heroku later
-        url = 'http://192.168.69.5:5000/token'
+        # url = 'http://192.168.69.5:5000/token'
+        url = 'http://192.168.1.60:5000/token'
         x = requests.get(url)
         print(x.json())
         return x.json()

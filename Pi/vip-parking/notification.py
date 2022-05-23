@@ -38,7 +38,8 @@ class Main:
     def get_noti(self):
         # get token from node server
         # change to heroku later
-        url = 'http://192.168.69.5:5000/notification'
+        # url = 'http://192.168.69.5:5000/notification'
+        url = 'http://192.168.1.60:5000/notification'
         x = requests.get(url)
         print(x.json())
         return x.json()
