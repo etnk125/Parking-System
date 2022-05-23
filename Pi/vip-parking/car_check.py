@@ -24,13 +24,14 @@ class Main:
         while True:
             for e in self.get_token():
                 now = datetime.now()
-                start_time = datetime.strptime(
-                    e['date'], "%Y-%m-%dT%H:%M:%S.%f%z").replace(tzinfo=None)
-                sec = (now-start_time).total_seconds()
-                min = int((sec/60) % 60)
-                hour = int(sec/60/60)
-                self.line_notify(
-                    e['token'], f"you have been parked for {hour} hour {min} min")
+                if e['date'] is not None:
+                    start_time = datetime.strptime(
+                        e['date'], "%Y-%m-%dT%H:%M:%S.%f%z").replace(tzinfo=None)
+                    sec = (now-start_time).total_seconds()
+                    min = int((sec/60) % 60)
+                    hour = int(sec/60/60)
+                    self.line_notify(
+                        e['token'], f"you have been parked for {hour} hour {min} min")
             time.sleep(self.interval)
 
     def line_notify(self, token, message):
