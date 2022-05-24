@@ -1,8 +1,8 @@
 # design system
 
 ## hardware 
-- 4 led
-- 4 ir sensor
+- 3 led
+- 3 ir sensor
 
 ## free parking
 
@@ -29,9 +29,4 @@ should using ground at 20,25
 
 ir: 32, 36, 38
 led: 31, 35, 37
-
-sent car status and token to netpie 
-{
-  "token": LineNotifyToken,
-  "status": GPIO.LOW or GPIO.HIGH
-}
+7segment: 5v, 19, 24, 23, gnd

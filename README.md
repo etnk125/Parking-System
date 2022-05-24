@@ -1,7 +1,20 @@
 # Parking System with PI NETPIE MEVN
 
-## author
+## problem
 
+- waste to many time to find car parking place
+- don't know how many car parking place left
+- forget how long you have parked
+- forget your parking spot
+ 
+## feature
+
+- check empty parking place
+- notify
+- reserve
+
+
+## author
  part of embedded class
  - this is [demo vdo](https://www.youtube.com/watch?v=iik25wqIuFo)
 
