@@ -16,7 +16,9 @@
 
 ## author
  part of embedded class
- - this is [demo vdo](https://www.youtube.com/watch?v=iik25wqIuFo)
+ - this is [demo vdo](https://youtu.be/1xJrODFfoCo)
+ - this is [presentation slide](https://www.canva.com/design/DAFBf8r_77c/Bnn55JISIO2ryr5Q3GJKnw/view?utm_content=DAFBf8r_77c&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+ - this is [infographic](https://www.canva.com/design/DAFBf3Mr0z0/AQRvbF7-WkFNY26N_BBtSQ/view?utm_content=DAFBf3Mr0z0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 ## raspi
 
@@ -73,3 +75,6 @@ this is [doclink](https://documenter.getpostman.com/view/19700615/UyxbrAUg)
 # VIP Parking System
 - access by web app
 - notify by line notify
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1xJrODFfoCo?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
